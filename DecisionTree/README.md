@@ -6,18 +6,26 @@ CS 5350/6350: Machine Learning Fall 2024
 - Submission: ~~21 Sep, 2024~~ -> 24 Sep, 2024
 
 ## Dataset
-- Car Dataset: UCI repository(https://archive.ics.uci.edu/ml/datasets/car+evaluation).
-- Bank Dataset: UCI repository(https://archive.ics.uci.edu/ml/datasets/Bank+Marketing).
+- Car:
+   - M. Bohanec. "Car Evaluation," UCI Machine Learning Repository, 1988. [Online]. Available: https://doi.org/10.24432/C5JP48.
+   - UCI repository (https://archive.ics.uci.edu/ml/datasets/car+evaluation).
+- Bank: 
+   - S. Moro, P. Rita, and P. Cortez. "Bank Marketing," UCI Machine Learning Repository, 2014. [Online]. Available: https://doi.org/10.24432/C5K306.
+   - UCI repository (https://archive.ics.uci.edu/ml/datasets/Bank+Marketing).
+- Bool
+   - HW1 1-(a)
+- Tennis
+   -  Play tennis (Page 43, Lecture: Decision Tree Learning, accessible by clicking the link http://www.cs.utah.edu/˜zhe/teach/pdf/3-decision-trees-learning.pdf).
 ## Setup
 
-1. Clone the repository:
+1. Clone the repository.
    ```bash
    git clone https://github.com/SeongilHeo/CS6350.git
    cd DecisionTree
    ```
 
-2. Place Dataset in the same folder.  
-`data-desc.txt` file in the same format as the car dataset is required. Place the data-desc.txt file into the Data/bank folder for the bank dataset, or simply place it in the current directory.    
+2. Place Dataset according to the file structure below.  
+   Each dataset requires a description file (`data-desc.txt`) similar to that of the car dataset. The `data-desc.txt` file of the car dataset can be used as is.
    ```
     .
     ├── DecisionTree
@@ -33,19 +41,18 @@ CS 5350/6350: Machine Learning Fall 2024
     │   │   │   ├── data-desc.txt
     │   │   │   ├── test.csv
     │   │   │   └── train.csv
-    │   │   └── golf
+    │   │   └── tennis
     │   │       ├── data-desc.txt
     │   │       └── train.csv
     │   ├── ID3.py
     │   ├── README.md
-    │   ├── data-desc.txt
     │   ├── run.py
     │   ├── run.sh
     │   └── utils.py
     └── README.md
     ```
 
-3. Make the `run.sh` script executable:
+3. Make the `run.sh` script executable.
    ```bash
    chmod +x run.sh
    ```
@@ -70,7 +77,7 @@ The `run.sh` script accepts several command-line options to control the behavior
 | `-M`, `--miss`         | Enable this flag to handle "unknown" values in the data.                     |
 | `-T`, `--tree`         | Enable this flag to visualize the decision tree.                             |
 | `-D DEPTH`, `--depth DEPTH` | Set the max depth of the ID3 decision tree. (Default: 1 to Max).           |
-| `-C CRITERION`, `--criterion CRITERION` | Set the criterion for impurity: `information_gain`, `majority_error`, `gini_index`. (Default: All criteria are use)d. |
+| `-C CRITERION`, `--criterion CRITERION` | Set the criterion for impurity: `information_gain`, `majority_error`, `gini_index`. (Default: All criteria are used). |
 
 ### Examples
 
@@ -84,7 +91,7 @@ The `run.sh` script accepts several command-line options to control the behavior
    ./run.sh --data bank --dir /path/to/Data
    ```
 
-3. **Enabling "unknown" value handling**
+3. **Enabling "unknown" value handling:**
    ```bash
    ./run.sh --data bank -M
    ```
