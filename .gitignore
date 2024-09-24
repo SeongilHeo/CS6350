@@ -1,1 +1,3 @@
-Data
+Data/
+__pycache__/
+*.ipynb
