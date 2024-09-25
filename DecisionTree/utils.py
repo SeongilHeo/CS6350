@@ -85,9 +85,9 @@ def load_data(filename):
                 data.append(sample[:-1])
                 labels.append(sample[-1])
     except FileNotFoundError:
-        raise FileNotFoundError(f"File '{filename}' not found.")
+        raise FileNotFoundError(f"[Error] File '{filename}' not found.")
     except Exception as e:
-        raise Exception(f"An error occurred while loading the data: {e}")
+        raise ValueError(f"[Error] Failed file read: {e}")
 
     return data, labels
 

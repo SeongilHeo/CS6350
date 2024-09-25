@@ -24,7 +24,7 @@ CS 5350/6350: Machine Learning Fall 2024
    cd DecisionTree
    ```
 
-2. Place Dataset according to the file structure below.  
+2. Place Dataset only `train.csv` and `test.csv` according to the file structure below.  
    Each dataset requires a description file (`data-desc.txt`) similar to that of the car dataset. The `data-desc.txt` file of the car dataset can be used as is.
    ```
     .

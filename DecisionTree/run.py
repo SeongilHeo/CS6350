@@ -38,17 +38,6 @@ def main(args):
             preprosess_miss(train_data, columns[key])    
             preprosess_miss(test_data, columns[key])    
 
-    # ID3tree.train(train_data,
-    #             train_labels,
-    #             attributes,
-    #             columns,
-    #             numerical_attributes)
-    
-    # print(f"[INFO] Success train ID3 with {args.data} dataset.")
-
-    # ID3tree.predict(test_data)
-    # ID3tree.evaluate(test_data, test_labels)
-
     train_avg=[]
     test_avg=[]
     total_avg=[]
@@ -107,7 +96,7 @@ def main(args):
             # for latex
             # print(f" & {train_err:.3f} & {test_err:.3f} & {total_err:.3f}", end=" ")
             # print(f"& {train_acc:.3f} & {test_acc:.3f} & {acc:.3f}", end=" ")
-        # print("\\ \hline")
+        # print("\\\ \hline")
         print("-"*70)
 
     # print("avg.",end=" ")
@@ -120,6 +109,7 @@ def main(args):
         print(f"Avg. train: {f_train_avg:.3f} & test: {f_test_avg:.3f} & total: {f_total_avg:.3f}")
         # for latex
         # print(f"& {f_train_avg:.3f} & {f_test_avg:.3f} & {f_total_avg:.3f}", end=" ")
+    # print("\\\ \hline")
 
 
 if __name__ == "__main__":
@@ -130,7 +120,7 @@ if __name__ == "__main__":
     parser.add_argument('--dir', type=str, default='Data', help='Directory of Data folder. (Default: ./Data, ex: /path/to/Data)')
     parser.add_argument('-M','--miss', action='store_true', help='Enable this flag to handle "unknown" values.')
     parser.add_argument('-T','--tree', action='store_true', help='Enable this flag to visualize the tree')
-    parser.add_argument('-D','--depth', type=str, help='Set ID3 max depth. (Default: 1 to Max)')
+    parser.add_argument('-D','--depth', type=int, help='Set ID3 max depth. (Default: 1 to Max)')
     parser.add_argument('-C','--criterion', type=str, help='Set criterion for inpurity: information_gain, majority_error, gini_index. (Default: All)')
 
     args = parser.parse_args()
