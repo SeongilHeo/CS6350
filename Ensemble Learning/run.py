@@ -35,7 +35,7 @@ def main(args):
                     labels,
                     attributes,
                     columns,
-                    numerical_attributes)
+                    numerical_attributes,test_data,test_labels)
         
 
         # train data
