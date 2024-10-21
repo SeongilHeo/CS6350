@@ -1,0 +1,13 @@
+| label values
+
++, -
+
+| attributes
+
+O:  S,O,R.
+T:  H,M,C.
+H:  H,N.
+W:  W,S.
+
+| columns
+O,T,H,W

@@ -1,3 +1,6 @@
 __pycache__/
 *.csv
 *.ipynb
+_*
+.vscode/*
+*.json
