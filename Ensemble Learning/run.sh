@@ -48,7 +48,7 @@ while [[ "$#" -gt 0 ]]; do
 done
 
 # Build the command
-CMD="python3 run.py --dir $DIR --data $DATA --model $MODEL -N $NUM --ratio $RATIO"
+CMD="python run.py --dir $DIR --data $DATA --model $MODEL -N $NUM --ratio $RATIO"
 
 # Add optional flags and parameters
 if [ -n "$SEED" ]; then

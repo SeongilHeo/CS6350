@@ -39,7 +39,7 @@ while [[ "$#" -gt 0 ]]; do
 done
 
 # Build the command
-CMD="python3 run.py --dir $DIR --data $DATA"
+CMD="python run.py --dir $DIR --data $DATA"
 
 # Add optional flags and parameters
 if [ -n "$MODEL" ]; then
