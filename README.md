@@ -39,3 +39,14 @@ This is a machine learning library developed by Seongil Heo for CS5350/6350 in U
 | `-R`, `--r`            | Set learning rate. (Optional, example: 0.01)                                 |
 | `-q`                   | Choose question number. (options: 4a, 4b, 4c)                                 |
 ## Homework 3 - Perceptron
+### Options
+
+| Option                 | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `--help`               | Show this help message and exit.                                             |
+| `--dir DIR`            | Directory of the data folder. (Default:`../Data`. Example: `/path/to/Data`). |
+| `--data DATA`          | Choose Dataset: `banknote`. (Default: `banknote`).                             |
+| `-M`, `--model`        | Choose model. (Default: `standard`, Options: `standard`, `voted`, `average`)      |
+| `-T EPOOCH`,`--t EPOOCH`| Set maximum epoch. (Default: 10)                                             |
+| `-R Learningrate`,`--r Learningrate`| Set learning rate. (Default: 0.01)                                             |
+| `-q`                   | Choose question number. (Options: 2a, 2b, 2c)                                 |

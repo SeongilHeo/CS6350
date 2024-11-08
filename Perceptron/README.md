@@ -1,6 +1,8 @@
 # Homework 3 - Perceptron
 CS 5350/6350: Machine Learning Fall 2024  
 
+It was tested on a Linux machine in the Cade lab.
+
 ## Setup
 
 1. Clone the repository.
