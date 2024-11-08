@@ -13,20 +13,23 @@ CS 5350/6350: Machine Learning Fall 2024
    ```
    .
    ├── Data
-   │   ├── bank
-   │   ├── bool
-   │   ├── concrete
-   │   │   ├── data-desc.txt
-   │   │   ├── test.csv
-   │   │   └── train.csv
-   │   └── tennis
-   ├── Ensemble Learning
-   │   ├── README.md
-   │   ├── gradient.py
-   │   ├── run.py
-   │   └── run.sh
-   │   ...
-   └── README.md  
+   │   │   ...
+   │   ├── banknote
+   │   │   ├── data-desc
+   │   │   ├── test.csv
+   │   │   └── train.csv
+   │   └── ...
+
+   ├── DecisionTree
+   │   ...
+   ├── Perceptron
+   │   ├── README.md
+   │   ├── model.py
+   │   ├── run.py
+   │   ├── run.sh
+   │   └── utils.py
+   └── README.md
+
     ```
 
 3. Make the `run.sh` script executable.
@@ -49,10 +52,11 @@ The `run.sh` script accepts several command-line options to control the behavior
 | Option                 | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
 | `--help`               | Show this help message and exit.                                             |
-| `--dir DIR`            | Directory of the data folder. (Default:`./Data`. Example: `/path/to/Data`). |
+| `--dir DIR`            | Directory of the data folder. (Default:`../Data`. Example: `/path/to/Data`). |
 | `--data DATA`          | Choose Dataset: `banknote`. (Default: `banknote`).                             |
-| `-M`, `--model`        | Choose model. (Default: standard, Options: standard, voted, average)      |
+| `-M`, `--model`        | Choose model. (Default: `standard`, Options: `standard`, `voted`, `average`)      |
 | `-T EPOOCH`,`--t EPOOCH`| Set maximum epoch. (Default: 10)                                             |
+| `-R Learningrate`,`--r Learningrate`| Set learning rate. (Default: 0.01)                                             |
 | `-q`                   | Choose question number. (Options: 2a, 2b, 2c)                                 |
 
 
