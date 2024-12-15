@@ -1,5 +1,6 @@
 from utils import *
 from model import ThreeLayerNN
+from model_torch import ThreeLayerNNTorch
 import matplotlib.pyplot as plt
 import argparse
 try:
@@ -98,6 +99,14 @@ def main(args):
         plt.show()
 
         return
+    
+    elif args.q == "2e":
+        train='train.csv'
+        test='test.csv'
+
+        train_X, train_y = load_data(DIR + data + train)
+        test_X, test_y = load_data(DIR + data + test)
+        ThreeLayerNNTorch(train_X,train_y,test_X,test_y)
 
             
 if __name__ == "__main__":
@@ -106,7 +115,7 @@ if __name__ == "__main__":
 
     parser.add_argument('--dir', type=str, default='../Data', help='Directory of Data folder. (Default: ../Data, ex: /path/to/Data)')
     parser.add_argument('--data', type=str, default='banknote', help='Choose Dataset: banknote. (Default: banknote)')
-    parser.add_argument('-q', type=str, default=None, help='Choose question number. (options: 2a, 2b, 2c)')
+    parser.add_argument('-q', type=str, default=None, help='Choose question number. (options: 2a, 2b, 2c, 2e)')
 
     args = parser.parse_args()
 

@@ -14,7 +14,7 @@ display_help() {
     echo "  -h, --help         Display this help message and exit"
     echo "  --dir DIR          Directory of Data folder. (Default: ../Data, example: /path/to/Data)"
     echo "  --data DATA        Choose dataset: banknote. (Default: banknote)"
-    echo "  -q Q               Choose question number. (options: 2a, 2b, 2c)"
+    echo "  -q Q               Choose question number. (options: 2a, 2b, 2c, 2e)"
     echo
     echo "Example:"
     echo " ./run.sh --dir /path/to/Data -q 2a"

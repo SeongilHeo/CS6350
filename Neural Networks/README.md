@@ -52,12 +52,12 @@ The `run.sh` script accepts several command-line options to control the behavior
 | `--help`               | Show this help message and exit.|
 | `--dir DIR`            | Directory of the data folder. (Default: `../Data`. Example: `/path/to/Data`).|
 | `--data DATA`          | Choose dataset. (Default: `banknote`).|
-| `-q`                   | Specify the question number for the task. (Options: `2a`, `2b`, `2c`, `2d`, Default: `None`). |
+| `-q`                   | Specify the question number for the task. (Options: `2a`, `2b`, `2c`, `2e`, Default: `None`). |
 
 ---
 ### Examples
 
-1. **Running with default dataset (`banknote`) and directory (`../Data`) and `banknote` stochastic model:**
+1. **Running with default dataset (`banknote`) and directory (`../Data`) question 2a:**
    ```bash
    ./run.sh
    ```
@@ -77,6 +77,6 @@ You can run this program according to the qeustion  for grading.
 
 1. Place the dataset in the correct location.
 2. Run `run.sh` with -q argument based on the problem. (Refer to example 2.)
-   There are five options: 2a, 2b, and 2c.
+   There are five options: 2a, 2b, 2c, and 2e.
 
 
